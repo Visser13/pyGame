@@ -42,6 +42,8 @@ class Game:
         self.tilemap = Tilemap(self,tile_size=16)
         self.tilemap.load("map.json")
 
+        print(self.tilemap.extract([("large_decor", 2)], keep=True))
+
         self.scroll = [0,0]
 
     def run(self):
